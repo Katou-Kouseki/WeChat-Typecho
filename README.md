@@ -1,4 +1,4 @@
-[![tittle](https://cdn.xsiy.ltd/photo/cid178/tittle.png "tittle")](https://cdn.xsiy.ltd/photo/cid178/tittle.png "tittle")
+[![tittle](https://github.com/xsy2004/WeChat-Typecho/raw/master/tittle.png "tittle")](https://github.com/xsy2004/WeChat-Typecho/raw/master/tittle.png "tittle")
 # WeChat-Typecho
 微信小程序版Typecho https://www.xsy.fun/
 
