@@ -2,10 +2,11 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 /**
  * 微信QQ小程序通用WeTypechoAPI接口插件 <br>
- * 特别感谢原作者：<a href="https://2012.pro/index.php/20180806/cid=37.html">成都第七帅</a><br>
+ * 感谢原作者：<a href="https://2012.pro">成都第七帅</a><br>
  *
  * @package WeTypecho插件
  * @author  XSY修改版
+ * @version 1.0.1
  * @link https://www.xsy.fun
  *
  */
@@ -96,23 +97,23 @@ class WeTypecho_Plugin implements Typecho_Plugin_Interface
     public static function config(Typecho_Widget_Helper_Form $form)
     {        
     
-        $swipePosts = new Typecho_Widget_Helper_Form_Element_Text('swipePosts', NULL, '1,2', _t('滑动文章列表'),  _t('要在滑动列表里面显示的文章的cid值，用英文逗号隔开。'));
+        $swipePosts = new Typecho_Widget_Helper_Form_Element_Text('swipePosts', NULL, '', _t('滑动文章列表'),  _t('要在滑动列表里面显示的文章的cid值，用英文逗号隔开（非必填）。'));
         $form->addInput($swipePosts);
-        $recommend = new Typecho_Widget_Helper_Form_Element_Text('recommend', NULL, '1,2', _t('推荐阅读列表'),  _t('推荐阅读中显示的文章的cid值，用英文逗号隔开。'));
+        $recommend = new Typecho_Widget_Helper_Form_Element_Text('recommend', NULL, '', _t('推荐阅读列表'),  _t('推荐阅读中显示的文章的cid值，用英文逗号隔开（非必填）。'));
         $form->addInput($recommend);
         $apiSecret = new Typecho_Widget_Helper_Form_Element_Text('apiSecret', NULL, 'xxx', _t('APISEC'),  _t('要与小程序端config.js中API_SECRET字段保持一致，否则无法从服务器读取数据'));
         $form->addInput($apiSecret);
-        $appID = new Typecho_Widget_Helper_Form_Element_Text('appid', NULL, 'xxx', _t('QQ小程序的APPID'),  _t('小程序的APP ID'));
+        $appID = new Typecho_Widget_Helper_Form_Element_Text('appid', NULL, 'xxx', _t('QQ小程序的APPID'),  _t('小程序的APP ID（非必填）'));
         $form->addInput($appID);
-        $appSecret = new Typecho_Widget_Helper_Form_Element_Text('appsecret', NULL, 'xxx', _t('QQ小程序的APP secret ID'),  _t('小程序的APP secret ID'));
+        $appSecret = new Typecho_Widget_Helper_Form_Element_Text('appsecret', NULL, 'xxx', _t('QQ小程序的APP secret ID'),  _t('小程序的APP secret ID（非必填）'));
         $form->addInput($appSecret);
-        $wxappID = new Typecho_Widget_Helper_Form_Element_Text('wxappid', NULL, 'xxx', _t('微信小程序的APPID'),  _t('小程序的APP ID'));
+        $wxappID = new Typecho_Widget_Helper_Form_Element_Text('wxappid', NULL, 'xxx', _t('微信小程序的APPID'),  _t('小程序的APP ID（非必填）'));
         $form->addInput($wxappID);
-        $wxappSecret = new Typecho_Widget_Helper_Form_Element_Text('wxappsecret', NULL, 'xxx', _t('微信小程序的APP secret ID'),  _t('小程序的APP secret ID'));
+        $wxappSecret = new Typecho_Widget_Helper_Form_Element_Text('wxappsecret', NULL, 'xxx', _t('微信小程序的APP secret ID'),  _t('小程序的APP secret ID（非必填）'));
         $form->addInput($wxappSecret);
-        $author = new Typecho_Widget_Helper_Form_Element_Text('author', NULL, 'XSY', _t('博客作者名称'),  _t('文章详情页博客作者信息的名称'));
+        $author = new Typecho_Widget_Helper_Form_Element_Text('author', NULL, 'XSY', _t('博客作者名称'),  _t('文章详情页博客作者信息的名称（必填）'));
         $form->addInput($author);
-        $website = new Typecho_Widget_Helper_Form_Element_Text('website', NULL, 'www.xsy.fun', _t('博客网址'),  _t('文章详情页博客作者信息的网址'));
+        $website = new Typecho_Widget_Helper_Form_Element_Text('website', NULL, 'www.xsy.fun', _t('博客网址'),  _t('文章详情页博客作者信息的网址（非必填）'));
         $form->addInput($website);
         //$account = new Typecho_Widget_Helper_Form_Element_Text('account', NULL, '', _t('微信公众号'),  _t('文章详情页博客作者信息的微信公众号（填了也没用）'));
         //$form->addInput($account);
