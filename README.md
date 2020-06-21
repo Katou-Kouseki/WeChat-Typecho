@@ -60,6 +60,10 @@ thumb（文章缩略图）
 ## 教程
 在```/common/vendor.js```第236行修改你的信息，这函数命名规则不是我写的，别打我
 
+**修改r和i并且与后端小程序对应上**
+
+![](https://cdn.xsiy.ltd/photo/cid178/2.png)
+
 在```/pages/about/home/home.wxml```第6行和第8行修改你的博客名和简介
 
 在```/pages/index/index.wxml```第三行修改小程序最顶上的名称
