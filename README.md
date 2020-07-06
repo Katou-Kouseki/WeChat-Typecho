@@ -4,8 +4,12 @@
 
 ## 前言
 最近我看到不少博主都发布了微信小程序版Typecho，但是质量层次不齐，开源的界面不美观，也有美观的，但是要收费，秉着节俭的原则，还是在github尝试了n多的项目之后找到了个真正能跑起来的项目，先不说界面怎么样，起码是可以跑起来的，其他项目多多少少在我这个主题下有些问题，也可能是当时的调试问题吧，毕竟是第一次接触微信小程序，最开始还不是很熟悉项目的构建，后来慢慢花的时间多了才摸清楚具体的操作，正是因为开源的程序界面并不是很美观而且handsome主题启用他们比较困难，例如头图的丢失，文章摘要的丢失，等等，所以我选择在一版能跑起来的项目上修改前端页面。
+
+### 项目地址
+[WeChat-Typecho](https://github.com/xsy2004/WeChat-Typecho "WeChat-Typecho")
+求求大佬Star啊，卑微
 #### 扫码预览
-[![小程序码](https://github.com/xsy2004/WeChat-Typecho/raw/master/cxm.jpg "小程序码")](https://github.com/xsy2004/WeChat-Typecho/raw/master/cxm.jpg "小程序码")
+[![小程序码](https://cdn.xsiy.ltd/photo/cid178/cxm.jpg "小程序码")](https://cdn.xsiy.ltd/photo/cid178/cxm.jpg "小程序码")
 
 ## 特别鸣谢
 把致谢放在最开头是因为我自己也是一个~~码农~~菜鸡，所以深知写代码的不容易，所以在此特别感谢
@@ -59,6 +63,8 @@ thumb（文章缩略图）
 
 ## 教程
 在```/common/vendor.js```第236行修改你的信息，这函数命名规则不是我写的，别打我
+
+在微信开发者工具调试的时候要在详情里面勾选，不校验合法域名，web-view，那一项，要不然在调试的时候会显示不了文章
 
 **修改r和i并且与后端小程序对应上**
 
@@ -114,4 +120,4 @@ pages是所有的页面，可以被引用跳转，例如跳转关于页面，地
 ```
 可以自行添加参数，调用方法如下```{{item.title}}```使用前要声明```wx:for="{{categories}}"```
 
-求大佬赞赏啦![](https://github.com/xsy2004/WeChat-Typecho/raw/master/zsm.jpg)
+求大佬赞赏啦![](https://cdn.xsiy.ltd/wxxcx/zsm.jpg)
